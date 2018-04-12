@@ -4,4 +4,6 @@ https://github.com/selectel/supload
 
 ## Usage
 
-  docker run --rm rlatkn/supload supload -u $STORAGE_USERNAME -k $STORAGE_USERKEY -r $STORAGE_CONTAINER $LOCAL_DIR  
+Upload directory:
+
+    docker run -v dist:/dist --rm rlatkn/supload supload -$STORAGE_USERNAME -k $STORAGE_USERKEY -r $STORAGE_CONTAINER /dist 
